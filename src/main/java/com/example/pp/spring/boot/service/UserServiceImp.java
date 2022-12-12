@@ -15,13 +15,13 @@ public class UserServiceImp implements UserService {
         this.userDao = userDao;
     }
 
-    @Transactional()
+    @Transactional
     @Override
     public List<User> index() {
         return userDao.index();
     }
 
-    @Transactional()
+    @Transactional
     @Override
     public User show(Long id) {
         return userDao.show(id);
